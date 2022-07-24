@@ -8,7 +8,7 @@ public class DecompressString {
     private static int index = 0;
 
     public static void main(String[] args) {
-//        String input = "2[ab]2[xyz]c";
+        String input = "y2[a]2[x2[z]]10[c]0[w]2[]";
 //        String input = "2[ab]2[x2[iv]yz]c";
 //        String input = "10[a]2[x2[]yz]c";
 //        String input = "c2[2[a]z]c10[x]q";
@@ -16,9 +16,9 @@ public class DecompressString {
 //        String input = "1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[1[xx]]]]]]]]]]]]]]]]]]]]";
 //        String input = "10[a]2[x2[]yz2[oi]]c0[b]";
 //        String input = "a[]b";
-        String input = "0[abc]";
+//        String input = "0[abc]";
 
-         sb = new StringBuilder();
+        sb = new StringBuilder();
 
         System.out.println(decompress(input));
     }

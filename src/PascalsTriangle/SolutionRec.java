@@ -1,4 +1,4 @@
-class Solution {
+class SolutionRec {
     private int[][] memo;
     
     public List<List<Integer>> generate(int numRows) {

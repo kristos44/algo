@@ -1,5 +1,8 @@
 /**
  * https://leetcode.com/problems/pascals-triangle/
+ * 1. Iterate in double loop, outside loop is responsible for "lines" in triangle, inside loop for elements in line
+ * 2. On each iteration of outside loop one more element is added in inside loop, so at the begining there was 1, then 2, etc.
+ * 3. If element on border (condition j == 0 || j == i is true) of triangle set it to, else set as sum two other directly above it from previous line
  */
 
 class Solution {

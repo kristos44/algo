@@ -3,10 +3,7 @@
  */
 
 class Solution {
-    private int[][] memo;
-    
     public List<List<Integer>> generate(int numRows) {
-        memo = new int[numRows][numRows];
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> prev = null;
         List<Integer> curr;

@@ -5,13 +5,30 @@
 * 3. less brute force solution, runs internal loop only when finds smaller number than the one checked previously
 * 4. even lesser brute force, beside keeping an eye on smallest element, we also store it's index and value of max and it's index,
 *    we search for max in small loop only if max is zero or index of became bigger than index of max
+* 5. taken from Striver's vid the one that should be obvious :) niceAndClean one, iterate keeping and eye on min and maxProfit,
+*    done with one interation cycle :)
 */
 
 class Solution {
     public int maxProfit(int[] prices) {
+        return niceAndClean(prices);
         // return bruteForce(prices);
         // return lessBruteForce(prices);
-        return evenLesserBruteForceButQuiteComplicated(prices);
+        // return evenLesserBruteForceButQuiteComplicated(prices);
+    }
+    
+    private int niceAndClean(int[] prices) {
+        int min = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        int potencialMaxProfit = 0;
+                
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i] < min) min = prices[i];
+            potencialMaxProfit = prices[i] - min;
+            if (potencialMaxProfit > maxProfit) maxProfit = potencialMaxProfit;
+        }
+        
+        return maxProfit;
     }
     
     private int bruteForce(int[] prices) {

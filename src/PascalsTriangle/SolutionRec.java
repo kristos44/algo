@@ -1,8 +1,8 @@
 /**
  * https://leetcode.com/problems/pascals-triangle/
- * 1. I will put here some description of this solution
- * 2. I promise! :)
- * 3. See you around :)
+ * 1. Solution based on recurstion and memoization
+ * 2. I create memo arr which stores all sums counted already
+ * 3. In double loop layer by layer is counted
  */
 
 class SolutionRec {

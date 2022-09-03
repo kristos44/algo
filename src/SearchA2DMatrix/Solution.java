@@ -1,4 +1,5 @@
 /**
+* https://leetcode.com/problems/search-a-2d-matrix/
 * kristos44 solution
 * Solution base on two binary search
 * 1. first using binary search we're looking for row which first element is smaller than target and which is right before the row which first element is bigger that target, if this condtino can't be met (target is bigger than first element in each row) we're taking last row
